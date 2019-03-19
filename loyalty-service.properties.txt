@@ -1,0 +1,2 @@
+loyalty-service.basePoint=100
+loyalty-service.rewardPoint=3
