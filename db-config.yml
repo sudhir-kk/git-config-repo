@@ -1,12 +1,18 @@
 spring:
-  profiles: local
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/springbootms?useSSL=false
+    url: jdbc:mysql://localhost:3306/restdb?useSSL=false
     username: root
-    password: root
+    password: jlcindia
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: true
- 
+    show-sql: true  
+  
+server:
+  port: 8091
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7090/eureka
